@@ -1,43 +1,43 @@
 # Lazy-Classifier-Traffic-Accidents-Madrid
 ## Analysis of Traffic Accidents in the City of Madrid
 
-### ESTRUCTURA DEL CONJUNTO DE DATOS
+### DATASET STRUCTURE
 
-**Nombre del conjunto de datos:** Accidentes de tráfico de la Ciudad de Madrid (desde 2019)
+**Dataset Name:** Traffic Accidents in the City of Madrid (since 2019)
 
-**Descripción:** Accidentes de tráfico en la Ciudad de Madrid registrados por Policía Municipal con víctimas y/o daños al patrimonio.
+**Description:** Traffic accidents in the City of Madrid recorded by the Municipal Police involving victims and/or property damage.
 
-**Unidad responsable:** Dirección General de la Policía Municipal
+**Responsible Unit:** General Directorate of the Municipal Police
 
-**Descripción de la estructura del fichero de la aplicación SIGIT**
+**Description of the SIGIT application file structure**
 
-**IMPORTANTE:**
-- El fichero incluye un registro por persona implicada en el accidente (conductores, viajeros, peatones, testigos, etc.)
-- En el año 2019 y posteriores:
-  - La estructura de datos varía respecto a los años anteriores. El detalle de estas estructuras está disponible en el apartado 'Documentación Asociada'
-  - No se incluyen registros de testigos.
-- Los ficheros de 2010 a 2018 solo registran los accidentes con heridos o con daños al patrimonio municipal.
-- Los datos publicados son provisionales hasta seis meses después del año vencido.
-- Actualmente no se dispone de datos por barrio.
+**IMPORTANT:**
+- The file includes one record per person involved in the accident (drivers, passengers, pedestrians, witnesses, etc.).
+- For 2019 and later:
+  - The data structure differs from previous years. Details of these structures are available in the 'Associated Documentation' section.
+  - Witness records are not included.
+- Files from 2010 to 2018 only record accidents involving injuries or municipal property damage.
+- The published data is provisional for up to six months after the end of the year.
+- Neighborhood-level data is not currently available.
 
-### TIPOS DE ACCIDENTES:
-- **Colisión doble:** Accidente de tráfico ocurrido entre dos vehículos en movimiento (colisión frontal, fronto lateral, lateral).
-- **Colisión múltiple:** Accidente de tráfico ocurrido entre más de dos vehículos en movimiento.
-- **Alcance:** Accidente que se produce cuando un vehículo circulando o detenido por las circunstancias del tráfico es golpeado en su parte posterior por otro vehículo.
-- **Choque contra obstáculo o elemento de la vía:** Accidente ocurrido entre un vehículo en movimiento con conductor y un objeto inmóvil que ocupa la vía o zona apartada de la misma (vehículo estacionado, árbol, farola, etc.).
-- **Atropello a persona:** Accidente ocurrido entre un vehículo y un peatón que ocupa la calzada o que transita por aceras, refugios, paseos o zonas de la vía pública no destinada a la circulación de vehículos.
-- **Vuelco:** Accidente sufrido por un vehículo con más de dos ruedas, en el que por alguna circunstancia los neumáticos pierden el contacto con la calzada, quedando apoyado sobre un costado o sobre el techo.
-- **Caída:** Se agrupan todas las caídas relacionadas con el desarrollo y las circunstancias del tráfico (motocicleta, ciclomotor, bicicleta, viajero en bus, etc.).
-- **Otras causas:** Recoge los accidentes por atropello a animal, despeñamiento, salida de la vía, y otros.
+### TYPES OF ACCIDENTS:
+- **Double collision:** Traffic accident involving two moving vehicles (head-on, side-front, side collisions).
+- **Multiple collision:** Traffic accident involving more than two moving vehicles.
+- **Rear-end collision:** Accident occurring when a vehicle in motion or stopped due to traffic circumstances is struck from behind by another vehicle.
+- **Collision with obstacle or road element:** Accident involving a moving vehicle with a driver and a stationary object on the road or in an adjacent area (parked vehicle, tree, lamppost, etc.).
+- **Pedestrian hit:** Accident involving a vehicle and a pedestrian on the road or walking on sidewalks, refuges, walkways, or other areas of the public road not intended for vehicle traffic.
+- **Overturn:** Accident involving a vehicle with more than two wheels, where the tires lose contact with the road and the vehicle ends up on its side or roof.
+- **Fall:** Includes all falls related to traffic circumstances (motorcycle, moped, bicycle, bus passenger, etc.).
+- **Other causes:** Includes accidents caused by animal collisions, cliff falls, road departures, and other scenarios.
 
-### LESIVIDAD:
-- **01** Atención en urgencias sin posterior ingreso - *LEVE*
-- **02** Ingreso inferior o igual a 24 horas - *LEVE*
-- **03** Ingreso superior a 24 horas - *GRAVE*
-- **04** Fallecido dentro de las 24 horas - *FALLECIDO*
-- **05** Asistencia sanitaria ambulatoria con posterioridad - *LEVE*
-- **06** Asistencia sanitaria inmediata en centro de salud o mutua - *LEVE*
-- **07** Asistencia sanitaria sólo en el lugar del accidente - *LEVE*
-- **14** Sin asistencia sanitaria
-- **77** Se desconoce
-- **En blanco:** Sin asistencia sanitaria
+### SEVERITY:
+- **01** Emergency care without subsequent admission - *MINOR*
+- **02** Hospitalization of 24 hours or less - *MINOR*
+- **03** Hospitalization of more than 24 hours - *SERIOUS*
+- **04** Death within 24 hours - *FATAL*
+- **05** Outpatient care after the accident - *MINOR*
+- **06** Immediate medical care at a health center or mutual aid center - *MINOR*
+- **07** Medical care only at the accident site - *MINOR*
+- **14** No medical care
+- **77** Unknown
+- **Blank:** No medical care
